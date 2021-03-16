@@ -5,6 +5,11 @@ public class GuardaEtapaProcesso {
 	private String descricao;
 	private int tempoExecucao;
 
+	@Override
+	public String toString() {
+		return "Descricao: " + getDescricao() + " | Tempo: " + getTempoExecucao() + "\n";
+	}
+
 	public int getTempoExecucao() {
 		return tempoExecucao;
 	}
